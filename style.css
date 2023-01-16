@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --header-height: 125px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: NorseBold;
+    src: url('assets/Norse-Bold.otf') format('opentype');
+}
+
+.content {
+    display: flex;
+}
+
+.left-wrapper {
+    background-image: url('assets/background.avif');
+    background-size: cover;
+    width: max(30vw, 250px);
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    background-color: black;
+    opacity: 0.76;
+    position: relative;
+    top: calc(100vh / 4);
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+}
+
+h1 {
+    font-family: NorseBold;
+    color: white;
+    font-size: var(--header-height);
+}
+
+.logo {
+    height: var(--header-height);
+    width: auto;
+}
+
+.credits {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    width: inherit;
+    text-align: center;
+    top: 85vh;
+}
+
+a {
+    color: white;
+}
+
+/* right */
+.upper-text {
+    font-weight: 600;
+    font-size: 20px;
+}
